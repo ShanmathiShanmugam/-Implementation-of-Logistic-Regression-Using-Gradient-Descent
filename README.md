@@ -25,7 +25,6 @@ RegisterNumber:  212222100049
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import optimize
-
 data=np.loadtxt("ex2data1.txt",delimiter=',')
 X=data[:,[0,1]]
 y=data[:,2]
@@ -120,17 +119,14 @@ def predict(theta,X):
 
 np.mean(predict(res.x,X)==y)
 ```
-
 ## Output:
 ### 1. Array Value of x:
 ![Screenshot 2023-10-02 125947](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/2828d1d7-c0f3-4810-a607-7d30fcc175ee)
 
 ### 2. Array Value of y:
 ![image](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/c813c999-10ca-43db-a37c-83f10d242657)
-
 ### 3. Exam 1 - score graph:
 ![image](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/8e1d564a-95b8-4aae-9c05-66c96a057d06)
-
 
 ### 4. Sigmoid function graph:
 ![image](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/0bd3452b-367a-49ef-b788-7d9b42b73b55)
@@ -143,7 +139,6 @@ np.mean(predict(res.x,X)==y)
 
 ### 7. Print res.x:
 ![image](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/1a427533-016f-4a8d-920c-ae353785c224)
-
 ### 8. Decision boundary - graph for exam score:
 ![image](https://github.com/ShanmathiShanmugam/-Implementation-of-Logistic-Regression-Using-Gradient-Descent/assets/121243595/46be6842-a89f-4832-bedb-fd6c91c98a48)
 
